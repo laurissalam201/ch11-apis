@@ -34,12 +34,12 @@ print(nrow(info))
 # (bonus: limit language to only "R" -- which requires a different syntax)
 # (hint: https://developer.github.com/v3/search/#search-repositories)
 # Reassign the `resource` variable to refer to the appropriate resource.
-
+resource <- '/search/repositories'
 
 # You will need to specify some query parameters. Create a `query_params` list 
 # variable that specifies an appropriate key and value for the search term and
 # the language
-
+query_params <- list(q = "graphics+language:R")
 
 # Send a GET request to this endpoint--including your params list as the `query`
 
